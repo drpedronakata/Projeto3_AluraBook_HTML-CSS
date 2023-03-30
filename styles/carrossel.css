@@ -65,6 +65,7 @@
 .descricao__texto {
     font-size: 14px;
     line-height: 1.25em;
+    color: rgba(0, 0, 0, 0.85);
 }
 
 .descricao__imagem {
@@ -91,4 +92,8 @@
     background-color: var(--laranja);
     padding: 1em 0em;
     width: 45%;
+}
+
+.checked {
+    color: var(--laranja);
 }
