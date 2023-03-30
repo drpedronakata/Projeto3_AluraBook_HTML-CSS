@@ -1,0 +1,49 @@
+.contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: var(--branco);
+    padding: 1.5em;
+}
+
+.contato__titulo,
+.contato__texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto {
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.contato__email {
+    padding: 1em;
+    border: 1px solid var(--azul);
+    border-radius: 24px;
+    width: 90%;
+    color: var(--azul);
+}
+
+.contato__email::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--azul);
+    opacity: 1;
+    text-align: start;
+    padding-left: 2em;
+    background: url(../img/AluraBooks/Email.svg) no-repeat;
+}
+
+.contato__email::-moz-placeholder {
+    text-align: center;
+    background-position: 1em center;
+}
