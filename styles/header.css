@@ -76,9 +76,24 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .container__menu {
+        gap: 0.5em;
+        margin-left: 2em;
+    }
+
+    .container__links {
+        padding: 0 3.5em 0 0;
+        gap: 0em;
+    }
+
+    .container__links a:nth-child(3) {
+        margin-left: 3em;
+    }
+
     .container__titulo, .container__titulo > b {
         font-family: var(--fonte-secundario);
         font-size: 30px;
+        margin-top: auto;
     }
 
     .container__titulo {
