@@ -1,9 +1,7 @@
-
-
 .cabecalho {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     background-color: var(--branco);
     position: relative;
 }
@@ -11,8 +9,7 @@
 .container__menu {
     display: flex;
     align-items: center;
-    padding: 1em 0;
-    gap: 1.5em;
+    height: fit-content;
 }
 
 .container__frame {
@@ -33,7 +30,16 @@
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
-    margin-left: 1.5em;
+    padding: 1.5em;
+    padding-top: 2em;
+}
+
+.container__botao:checked~.cabecalho__container {
+    background: var(--azul-degrade);
+}
+
+.container__botao:checked~.cabecalho__container>.cabecalho__menu {
+    background-image: url("../img/AluraBooks/MenuAberto.svg");
 }
 
 .lista-menu {
@@ -47,7 +53,7 @@
     display: none;
 }
 
-.container__botao:checked ~ .lista-menu {
+.container__botao:checked~.lista-menu {
     display: block;
 }
 
@@ -71,6 +77,10 @@
     text-transform: uppercase;
 }
 
+.container__menu>img {
+    margin-left: 1em;
+}
+
 .container__titulo {
     display: none;
 }
@@ -85,6 +95,10 @@
         margin-left: 2em;
     }
 
+    .container__botao {
+        display: none;
+    }
+
     .container__frame {
         padding: 0 3.5em 0 0;
         gap: 0em;
@@ -94,7 +108,8 @@
         margin-left: 3em;
     }
 
-    .container__titulo, .container__titulo > b {
+    .container__titulo,
+    .container__titulo>b {
         font-family: var(--fonte-secundario);
         font-size: 30px;
         margin-top: auto;
@@ -105,7 +120,7 @@
         font-weight: 400;
     }
 
-    .container__titulo > b {
+    .container__titulo>b {
         font-weight: 700;
     }
 
@@ -114,7 +129,8 @@
         gap: 1em;
     }
 
-    .opcao__item, .opcao__link {
+    .opcao__item,
+    .opcao__link {
         text-transform: uppercase;
         text-decoration: none;
         color: var(--preto);
@@ -124,14 +140,15 @@
     .opcao__botao {
         display: none;
     }
-    
 
-    .opcao__botao:checked ~ .lista-menu {
+
+    .opcao__botao:checked~.lista-menu {
         display: block;
         width: auto;
     }
 
-    .container__imagem-transparente, .cabecalho__menu {
+    .container__imagem-transparente,
+    .cabecalho__menu {
         display: none;
     }
 }
@@ -153,7 +170,7 @@
         color: var(--preto);
         font-size: 20px;
         font-weight: 400px;
-        
+
     }
 
     .container__link:nth-child(3) p {
