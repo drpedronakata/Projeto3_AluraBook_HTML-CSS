@@ -59,3 +59,14 @@
     }
 
 }
+
+@media screen and (min-width: 1300px) {
+    .banner__texto {
+        margin: 0.8em 0 2em;
+    }
+
+    .banner__pesquisa {
+        width: 40%;
+        padding: 1.2em;
+    }
+}
