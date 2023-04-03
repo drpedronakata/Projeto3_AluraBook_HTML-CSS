@@ -47,3 +47,34 @@
     text-align: center;
     background-position: 1em center;
 }
+
+@media screen and (min-width: 1024px) {
+    .contato {
+        display: grid;
+        grid-template-columns: 50% 45%;
+        column-gap: 10%;
+        grid-template-rows: auto;
+        row-gap: 1em;
+        grid-template-areas: 
+            "titulo email"
+            "texto email";
+        padding: 2em 10%;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+        grid-area: titulo;
+        line-height: 1.5em;
+    }
+
+    .contato__texto {
+        font-weight: 400;
+        grid-area: texto;
+    }
+
+    .contato__email {
+        grid-area: email;
+        place-self: center;
+        width: 75%;
+    }
+}
