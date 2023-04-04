@@ -5,6 +5,9 @@ Projeto do Curso de HTML/CSS da Alura, sendo esse a parte 6/6 da formação <str
 
 O projeto foi realizado apos o [Projeto 2: AluraPlus](https://github.com/drpedronakata/Projeto2_AluraPlus_HTML-CSS).
 
+Nesse projeto, foi realizado um site em HTML/CSS seguindo o prototipo do Figma criado pelo curso.
+Onde foi seguido a abordagem mobile-first, e em seguida criado layouts responsivos para outros tamanhos (Tablet e PC)
+
 
 ![Print da Pagina](./img/Screenshot.png)
 
